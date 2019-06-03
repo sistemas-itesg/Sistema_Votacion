@@ -4,7 +4,6 @@ import AddStudent from '../AddStudent/AddStudent.jsx';
 import LogoItesg from './../../Resources/escudo.png';
 import LogoTec from '../../Resources/tec.png';
 import LogoGto from '../../Resources/gto.png';
-import apk from './Sistema_Votacion_ITESG.apk'
 
 class Login extends Component {
     constructor() {
@@ -91,11 +90,6 @@ class Login extends Component {
                                     className="btn btn-link"
                                     onClick={this.viewState}
                                 >Registrar</button>
-                                <a 
-                                    download={apk} 
-                                    className="btn btn-link"
-                                    href="#apk"
-                                >Descargar Aplicación</a>
                             </div>
 
                             <div className="card-footer">
