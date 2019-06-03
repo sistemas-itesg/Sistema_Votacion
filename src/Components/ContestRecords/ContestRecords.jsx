@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import fire from '../../Config/Config';
-import {Modal, ModalTitle} from 'react-bootstrap';
+import {Modal} from 'react-bootstrap';
 import UpdateContest from './../UpdateContest/UpdateContest';
 class ContestRecords extends Component
 {

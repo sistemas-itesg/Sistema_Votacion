@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import {Navbar,Nav,NavDropdown,Container,Modal} from 'react-bootstrap';
 import Home from './../Home/Home';
-import apk from './Sistema_Votacion_ITESG.apk'
 import User from './User/User'; 
 import fire from './../../Config/Config';
 
@@ -36,8 +35,6 @@ class NavBar extends Component
                                         className="btn btn-info"
                                         onClick={()=>this.state.userVisibility?this.setState({userVisibility:false}):this.setState({userVisibility:true})}
                                     >Información</button>
-                                    <NavDropdown.Divider />
-                                    <a download={apk} href="#apk">Descargar Aplicación</a>
                                     <NavDropdown.Divider />
                                     <button 
                                         type="submit" 

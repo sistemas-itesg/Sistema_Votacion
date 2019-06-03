@@ -2,10 +2,7 @@ import React,{ Component } from 'react'
 import {ProgressBar} from 'react-bootstrap'
 class Results extends Component
 {
-    constructor()
-    {
-        super()
-    }
+
     render()
     {
         return(<>

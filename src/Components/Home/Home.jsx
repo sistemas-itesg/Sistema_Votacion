@@ -1,10 +1,8 @@
 import React,{Component} from 'react';
-import NavBar from './../NavBar/NavBar';
 import {Modal} from 'react-bootstrap';
 import Voting from './../Voting/Voting';
 import fire from './../../Config/Config'
 import Results from './../Results/Results'
-import { firestore } from 'firebase';
 class Home extends Component
 {
     constructor(props)
@@ -37,9 +35,9 @@ class Home extends Component
         let Hora_Origen= Hora_Inicio.split(':')
         let Hora_Finalizacion=Hora_Termino.split(':')
         var Momento = new Date()
-        if(Fecha_Origen.getFullYear()=== Momento.getFullYear()-1 && Fecha_Finalizacion.getFullYear()===Momento.getFullYear()-1 || Fecha_Origen.getFullYear() === Momento.getFullYear() && Fecha_Finalizacion.getFullYear()===Momento.getFullYear())
+        if(((Fecha_Origen.getFullYear()=== Momento.getFullYear()-1) && (Fecha_Finalizacion.getFullYear()===Momento.getFullYear()-1)) || ((Fecha_Origen.getFullYear() === Momento.getFullYear()) && (Fecha_Finalizacion.getFullYear()===Momento.getFullYear())))
             if((Momento.getMonth()+1)<=(Fecha_Origen.getMonth()+1) && (Momento.getMonth()+1)<=(Fecha_Finalizacion.getMonth()+1))
-                if(Momento.getDate()>=(Fecha_Origen.getDate()+1) && Momento.getDate()<=(Fecha_Finalizacion.getDate()+1))
+                if((Momento.getDate()>=(Fecha_Origen.getDate()+1)) && (Momento.getDate()<=(Fecha_Finalizacion.getDate()+1)))
                 {
                     if(Momento.getDate() === Fecha_Origen.getDate()+1)
                     {
@@ -195,7 +193,7 @@ class Home extends Component
                             :null}
                             <br/>
                             <div className="btn-group" role="group" aria-label="Button group">
-                                {this.state.user != 'superusr' ?<button 
+                                {this.state.user !== 'superusr' ?<button 
                                     type="submit" 
                                     className="btn btn-success"
                                     name="Votacion" 

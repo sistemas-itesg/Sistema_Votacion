@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import {InputGroup} from 'react-bootstrap'
 import fire from '../../Config/Config';
-import { fileURLToPath } from 'url';
-
 
 class Voting extends Component
 {
