@@ -1,0 +1,42 @@
+.loginSize
+{
+     max-width: 900px;
+     min-width: 200px;
+}
+.registro
+{
+    width: 400px;
+    height: 800px;
+}
+.btn
+{
+    border-radius: 35px;
+}
+.form-control,.custom-select
+{
+    border-radius: 35px;
+}
+.table
+{
+    border-radius:15px;
+}
+.card,.card-header,.card-body
+{
+  border-radius: 15px;
+  border-bottom:15px; 
+}
+.btn-container
+{
+    align-self: center;
+    position: relative;
+    width: 200px;
+}
+.navbar
+{
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.custom-file-input,.custom-file-label,.progress-bar,.row
+{
+    border-radius: 35px;
+}
